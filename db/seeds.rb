@@ -1,0 +1,439 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+Blog.destroy_all
+Project.destroy_all
+Picture.destroy_all
+
+Blog.create(
+    title: 'Conditional Formatting With Javascript and CSS',
+    publication_date: 'Sep 16',
+    read_time: '3',
+    image_url: 'https://miro.medium.com/max/2880/1*JnjnrdH_0gfSmDH0IRLBJQ.png',
+    description: 'Looking for some tips and tricks about conditional formatting using Javascript and CSS? Look no further! Read on to discover the magic of dynamic rendering.',
+    link: 'https://medium.com/@taylor.stein09/conditional-formatting-with-javascript-and-css-7f5cbd7989e3'
+)
+
+Blog.create(
+    title: 'Form_for v.s. Form_tag',
+    publication_date: 'Sep 16',
+    read_time: '4',
+    image_url: 'https://miro.medium.com/max/493/1*oIX7WHV7dSgUj4aeMk-LTQ.jpeg',
+    description: 'Interested in the nuances between using form_for and form_tag? This blog will help you choose the right option to produce the functionality you need!',
+    link: 'https://medium.com/@taylor.stein09/form-for-v-s-form-tag-64ef4e2b628'
+)
+
+Blog.create(
+    title: 'Puts, Print, or P',
+    publication_date: 'Aug 4',
+    read_time: '4',
+    image_url: 'https://miro.medium.com/max/400/1*up9j9iaqQRhO4ZG7LTMNFw.gif',
+    description: 'Have you ever wondered why Ruby provides so many printing methods? Read Puts, Print, or P to figure out why and decide which is right for you!',
+    link: 'https://medium.com/@taylor.stein09/puts-print-or-p-e0b3342c5dd2'
+)
+
+Project.create(
+    title: 'Kanye Said What?',
+    language_1: 'Javascript',
+    language_2: 'React',
+    image_url: 'https://lh3.googleusercontent.com/Csmo9Z-o0CLiy21P-CtMuHjkGTz9Dx_wP1QSLndCALKUBomIIFcanFtwr0RiOoqn8NF0soKJDLKtKZfWBKrTFbbI9o4FVjwdZUC2po9ZqZZkZ4lNq3eYfT_0v7WFU0u7wMYTOFpn1W33AxLRvQE6j4OZwHaTz6I_6bzh5ZFakRo8M4vLWs2TY1nxgZ3_387R1n4UVvzwg0P1jcIW8wFhS4WjX4GPuT3N4O3AAxsTA4FOzklFuJov-X8TgrhTpneZ01Hat44VsqEHFgy2s2y2W2gAOFuLv6X8u5OaG3PBaXupTSSoG5lmqL6a87w83QNwCLvqayRHHVY3wNUNEAa1zzFoygAuDmIz8a_LLC2vY6WbUWFZ7glIEWQ5cONs_MX-tDBAeZiWfvMfBY8uwXCoLHAHhABDsLjKIPPaD3aP0fGwNhpU-9s--9eNP8-_7Mc89hTamOuqZ3jF8EEWXyeibBFD0FzbHank4ArBBvjlPknf_ZSdZrobhSuGbsbn7V5g5q-v4qG_NNZG8W7OHBvCbfaXMwmvztGjMJvTTbqZt91Q8HYT63fo7nm2g4ICcn1RT5_iyuvH2oRs8s0xaSlY83sYOKMt71Th0Cp1TzODYuOjIg6v7_eMNmDPJ9vSxNSlOpuikRSRR0SSubdWJUht9HLscr13RqstkEA4Q7s5L3w3fX4UhxWjp2s=w1915-h975-no',
+    description: "Are you continually baffled and amused by the ridiculous things that come out of Kanye's mouth? Do you want to hear more? Kanye Said What is a simple react app to discover the crazy world of Kanye's quotes.",
+    link: 'https://github.com/ChefBoyRT/KanyeSaidWhat'
+)
+
+Project.create(
+    title: 'LeftOvers',
+    language_1: 'Ruby',
+    language_2: 'React',
+    image_url: 'https://miro.medium.com/max/2880/1*JnjnrdH_0gfSmDH0IRLBJQ.png',
+    description: 'Are you concerned with the amount of food waste in the world? LeftOvers is a personal food waste tracking app that allows users to monitor the current state of their fridges by tacking expiration dates to help reduce the amount of personal waste contribution.',
+    link: 'https://github.com/ChefBoyRT/Leftovers'
+)
+
+Project.create(
+    title: 'TacoLandia',
+    language_1: 'Ruby',
+    language_2: 'CLI',
+    image_url: 'https://lh3.googleusercontent.com/NHpJKDsgFHp7N9fPJpZkuHV4irU2QhgbwCUL7jy78BxEbiiB2qTXs5BdriaVt0DrKmZkVL6_yFLEkEXN6KBRRIss1n0wrNQ6y988zxZoRmEPyV0OzHsQjP8Gt2BYxJuCRH84KQwAUBCRYj5eiWkhV0CkRyN65ofwWHogvZs3BNQ9BrqMYjotCPQNWnFwZwYvRNdXiry5uB_FRRp0cp17GKTO2dop2TFi2VYZYoepAz2LpTCFob_RGMV75WjGbMW2UDYPbbeFXqcib0jeUSCfnB9p29WmyiO3VgDnmuWQ94kmh6hgIgj9PsekVvTZA3TVxuPxNX5DrzlQgt4nGsdV1rW7-IXxW38D3HlvGCnEH1fe7-7Qsi-FhyMjnEiZ8EBp7oguSGjL0D_dbuwmQNmX3_An9edqMzzhKae5AHOXdpLDyRs0KX7FZp-CrjYLdRKFLKi31jnvlKem2jD9wswKo0WzactFKXDCcjFlfHQCrjtE8NF7jTp_8n4u1wdcFTQtWOZieE9QyP0WpQsUGI1JoxeOu53CeaaqIG7bCb37Hxrw1oru0n4hhFOUZ1XCYboVOuwW_yacPlCN6oYDnNon8O6G0a1DPlDTSs98mDzLGzZmPtUXQRyPKBkYU_XgwtcQh4DEpYsR2LeAvAizFxKQP-KEVRIG8_7Vb1A-dUyigv2juuuy7BQrdGU=w872-h647-no',
+    description: "Do you love tacos as much as I do? TacoLandia transports you into a world of delicious tacos where you can discover all the amazing variation. Take the taco quiz to pair tacos to your taste preferences. When you're done, pair the taco with a drink!",
+    link: 'https://github.com/ChefBoyRT/TacoLandia'
+)
+
+Project.create(
+    title: 'OverWatch',
+    language_1: 'Ruby',
+    language_2: 'Rails',
+    image_url: 'https://lh3.googleusercontent.com/dx2QUCjDrR65uSm2ScohYIbWh9cekoENh7OEVmAnSsHlgW4wTz6NoAWUmWK1_X2_64JoIym33OrK8-QtYZfl4HcjxvHQHgXNeyg8RXH5mvh6308NNPFc-eeYWSeFrCj8JkAnS_AInvG4SM0OLyq_JzqEJmgLX09qdvL2MYzlsp5paJl9pVwFGC-8KK9d9uVMKN4JFpOQL7jCVhBhjAE962mizM3Gt1M79RLRoAOasBWwVdVWPa_8uTKAd8kkFRs6-dJ6r83AkCjTXL57sJnuj6kwFIhXphXuLlFHTzVXgLjF3lY-mlZgfxW1ne-nDfscaU7Z_5pRC7EZFWjFAeivnGmVZJ-FDc80SnP_9zpnyde0hzF0ZYgU_erNZi5Sb2H0PzfOlz8kLei_FJ4EhkOY6yOaJqPVcaktgzH0fqQ-bVfl1fKA8ZrmBzMmC5zHTZVTQTBxLy_wPL-ge4rXmhwi6s_6GbHrSCRZLGGs1_O76u6ZC1PPLmqb12WEEc_flJMbJbXth99uGVPAVzdBBV7DHBNl4ZF_VvCl8aiWFpq28CMFMRu1zHHanFX90m849C20Wnq6qWY71iowizA1o2jFaFqIO75oPhkwKk229Q0VUDNCtHGfHmuuaoD8SIUgx6NpTgqICjNhs7mghkirJ0qxIyeR9avLHjjKBr7dh0YyxMbam1juJ-4ZPdM=w1915-h933-no',
+    description: "Are you a fan of the hit video game OverWatch? Then this is the application for you! OverWatch is a fan page built with Ruby on Rails for fans to dive into hero's backgrounds and view their play statistics.",
+    link: 'https://github.com/ChefBoyRT/Overwatch'
+)
+
+
+Picture.create(
+    location: 'Vero Beach, FL',
+    date: 'Nov 24, 2018',
+    description: 'Thanksgiving with friends',
+    image_url: 'https://lh3.googleusercontent.com/CYBSLgDeb4OlFUrKqwJgg91d9fWVGTZ1YbwdAdH9WK7ZWFDA-HASgzMukmUg6dMyk04qYfJ7djpDFcjFWulQNe2qGb6buijCQbCKk3NQqTLcXZsQFdD9wCGd5pwwpEiwm-LCDzEzkQBl6M_BdS0j2gMvf2eIGE20F9dq-SBhFs50XKiwwaQSmwezaSWmF54QK77al4sH-XyQrJm6iAGJhAiK3H2f43IxDPb_x4P1W7zuqoj90YghOBQH63CKPhsGHL0DFYH5vasr4H1NQaHPIgpSsJycNnjP-sELLMTA8iGKZ8oN7QdMtbtIG-jnS-k9O-LbrFCqGorPxcpN41hj927Sr6yp1nfh3MDRI6a8UgfhV30aA1YZAqYt-5qLtrPZQiLq-eceRSdzfKHiX67TXl4A4nnWMdKaYdI1mY4pjqLStKDxWCHq1uV5f81BFnyiBI2RB0NSDm9r7Ik81NhtayCVo-PPUiQIMVQh9Y39pD9aJQdCB52afwXLJaFwn2O1yCW1XEeewqQjK0oS4Uy0JUHObPqjr8pJV1ARFdkCpa8oRRt3zIoVW2ex3xGM3Zd95X4cjuu7nnHOjf-oUAWvaI8xoq-bgdQg0r2GuztJFYUu9UkpzaBqoMK_U3sfvarp3ffPivmYaTsAVRDrxmlGPwan8aav1ZDEUKY7nByE8lE4y_C6M88n2vA=w1304-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 5, 2018',
+    description: 'Humanitas360 word cloud',
+    image_url: 'https://lh3.googleusercontent.com/946e5maUHy_zBuMXC7N5784LNlyvug8V3p3GH-a8u14AfxJMLht1Q5mPZNwrlTDeFDNLnl338fNFH8JgixliJtG2_HtHTWlaKza7hKCG8LmxJCgoq3nHqC7lioB8UK0UnTzMI2s3JiqTY5E7kBriGQaE4EZINfYocZXg0xU_LDx6OdyMpEbdh5IyBgpYPZKJF_Aevgoj2wBrlEMx2TzYnWKmmfTSaPTn1_Lsb2Ho94vllYiz6foue6zVrURZpTamxVocVuYz8qnxg6WWD03Viz-4X9BA3I4WBGjHf1-hiwqz4AAEVnTz4KVsk6HEe96bq1N89DgzmcUVpjvpFXok1dpv4mCsGcsaorXMjMjbce-Z6WhBJatXz9Pdp7rz-JRpZLAWvBoa1hcK202kb5eDJ43ZzBnHbMjgfI2I2hzKxYDUJfNeVcQlhWTWzihECsVjF0rqPHxfqAB72UxZlmT8FHlGgqCxFAarNmpPXFkqhHrlbDw8EtFBbAT4fX_du3lCPdFTVHArRWkJ4Gv18IWHxdN0jnNjim1ju2jtQVUoIqUYPFquGpniTwrpWlfkAWNjBsslOUlrWNU8Z9zTxbMc8_kZ3erKrme6aUJbBNeXqHsmnX9CKc29NuGUduKBEBt-hXRBa0Urc49Mzf39xzqTs_M5r5sb3tqTIkUe0__n4G8uHTXNUAgVAMs=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 26, 2018',
+    description: 'Live interview with Civi-co owner',
+    image_url: 'https://lh3.googleusercontent.com/OUtSCFnXwFn9J21SZQ-1V5aEN-R87fV1bQmbda-WHU8IyHp6Q_Eizfc_3BJAg9mnGQqD72RikQmklNxrP673sMhgcqXTOE_fkDvFGu0ywEEXfU1GIe_cO2oLmcIaLlq4ABlpZUxw9LDJmFl9uOFhH-irEwdEzuU7ogbcyXWVtdIyhO9QvoErqNjDS3cGZvWmjgXYfpYrcv1wyuMkExmcbCRevDdfDl087Wl-rkrkaYhhMYHN4fAU3CdNCCIaO-y85tFf_RHO5Ei9VZLgHE1kquqGYY7swxdOInMm3_lfaaIwVHuv6AlEKUQUz_VBCi_gObsHXSjTncF7r5R53OOLdV3tWnUBrW-e6xMFM1uwQfennFhUaz9xm57z5YV19etXSy8oyBZs-ZSvLvXb2HvqQ_Jw4plrXpUo8sOou6bqfWTZSVzeuH_F9Vi68WZjJEjmUF5s1kbHSi13TcIqG5m3xEgObA-0MJcbMg1p168qBjp-ibuaUf5EMJZ9jTk2h3HImTy-u1cfD99EMGxbcA9g6jOqds85LCFIjz95F_PVsBB4Dsqqz0DRf0D-4sf0CUh4MBuOgS__2qPskw9mkRHzlR6IgA-NRSkSTnX1fwHnNrM70t-Y6PQJLKO_nEJ5kob-9PtTyvDPOrCjHPb-Jzl6FiZm9-mmfrLYfTBnvuHnXzNhIF5JQCNTiXs=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'Jan 16, 2019',
+    description: 'Celebrating the launch of Mini-Case Competition',
+    image_url: 'https://lh3.googleusercontent.com/hoy4iIDM9lSJi_M717K1j9So69tHUnkNeszHn6MkLjLCAHLP1qJLtF51WascT77N1tAr--JfK3Yaey2D61t9PyUjbKx7py7dn8IO22x1aLXv4HShu9JhYiLt-93P_00NJOseIhSo9KzJoG6OeN64UH3v6TpWV_RO7z9aSs2_1AsZEuQ9ZGBSUxA7ZJiU4B25wOauO2aTZ3b7IlctckefUCEvXHSVHquAoEc5w11fyJW-lbLtwZgYF0MqRU-U_GxxsON3psM_RvhRRICegx7Yy0Mi00mfv1jPz1OvHQn4L3tAd6lIH8TtsdZ-vdjRXM6thgHgjiqZb1SiJVytDhNHZTHtJGUws98nvbAsWf6g0pb9IE9Tx2cEYjc1UbY6ihZfBvRyHW26qG3FRCYI0PfsxEcfjzdQahXbx3oI06vpDfaxYxV18TEmQd_aKV4zE0Ba-bdQyUZ45XANJhsjwBS3XkG-rUsQ5YDBsGpWfKSuKI1zRq-h9Ssf2vJYKdq-lsM-DIfGlpRQTQaGlNiy57qMM5dW3jLXZRdjvtuHjaGgcpVb2f-okSwTWLte1xWTgN_4uo3J_TpkhbGGTe-eThTezR3Ym9QXNWGuyKhD7jmhtDkklVKg-qeybEFBCKhnWvjGH-0bgC4SQ2AVKIgJE2V3k0P9vqpgzRiorJhad0WGf9tKcXcIXFq9sqg=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 20, 2017',
+    description: 'Bella Coola Valley on a foggy morning',
+    image_url: 'https://lh3.googleusercontent.com/vXDSk4VuNDPzWqtJf4G7DCYHkOXnePHnxgL36GqC8vSOOpnEtAW7ZXKukwL06yEXSkxwv8JmenwOfeFR6N6JCZoCOpdDeKfmSS8L7RJIecznQdLjVm8SjF_6-u0_3cXgag6C0OS3Pb6JccTmzNpEeAeEJmIR019wTgwxv5KRUHa1dTOMa_laGEolFGns858NBo9F5QiMo9OI1PbS4x2IaH8ClHwPpYc2NB0uHvhcEij36SPAhkj71DzHmiPQsmahkypKvpxoLdU6QRlZDvZHP-H82PFjPqGDmMtD7u8AwEWP47EFzDc2BCZ3c1_2scVAC1L5fbOrlyljzkDLPzDJFh4MGHEhd8lE6tHyhigigxB704B-rXz_JksaujPV7eX0F09MN_jF3jG0t414MWb3MjF0PE1hJdJXX_GyFCBXxIfbA60DpsK8owtdIZtT0OwZ23UZhYSVWLh2MX4BkvRlWVdCv-3hygMSmsOUqae8vItaAEiEKglcUdYIbdd5stNEH5H3xJQ6K5RyB0kHzxNmpbX2EuCs1aRE1eU1PGMds1MKdm0v7_rRoDz_lmZFgF8ezkV_tIr3gI7zZAoXfL2mj6mdIqoaE-MzqszXjAwzHYLVV2uKM4WLmhfJMa_Ri_7LuoEVeO3fPyhqYTcyvrfMcw6kz9v3izihvj1sbRlaVMqdoLZEoI5M6YM=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 22, 2017',
+    description: 'Glacier in the Bella Coola Valley',
+    image_url: 'https://lh3.googleusercontent.com/Ivjy6vFagfCruDI2o9-7CeGBe1LhHPtBzSDwnTDPZkmioulVVEaVjgKbDsEwdSk9hCNsJtQ1fkdYsxbXn8ZhVHbaPZQ2jqrYb_tiY4Xyw9984D1fX18L1n2Tn4sNMOujmRMwRc5dnZCzl6-QS-9mKiQ0f3vKuTxUTAbN_pirZEGStxdDpYH6FwBBPiY-dkkju5i3inlpc4g4NgzkKQh9q8AjOVT2vrUChYniA0cnYWlN4hASsBKNK2URWGuEMCWPCf1HD1fy-ptmg3SZsUucJI7JOdNkb4d9AIC-TG3lg21SPwfY05N50F8aA_PqY1vXNRtnjag1ycwc3no5pdRg4GrByOCPVTBdFs_gUMCzD18_pLZjAKKfck2Wy5d97xtty69l03WWlIvs_w1Pfq7KifQxmZrgqCjVhQ2emE6Lk_CzeLEqgMYACAwvqlSUmTlIiWJ8b9s-FcSC_RNrjR8QX5FuuMW-X-Y9koznT0_ePz_wD_P_9JTcphk36mut0hjriKgXMBTkO2FfHhq_uqbRhC1AVj0pLFfQGgkM38AZE3ew01DcZOqWJ6xFuWNBbkfbidmwhbluBwHnYvE7Byg1DvNueaRXjoaIPdkMs67h2I5s_n6CXLHNC8O2szax_3PLEI6Uaid7ioujwYjN6bMzGIo2VH4ogC_XyvIVyfUq1L6mzak57Xmqp40=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 28, 2018',
+    description: 'Touring batman alley with the consulting team',
+    image_url: 'https://lh3.googleusercontent.com/Js3nWy_HpkmEvMv7trXCxp6aAKnz1oQmrnG5bDAEJhJn-RgzMPmi-LJTvXJatKKMFl8BsuDt00dgbQKriDsmTVvK5RGk_6gNF2fvbZEgzQX0Lek9ZxVPOhg1w1rw1kg49xvWhM7o35jd6Dra58NCM6Zp0SIwRGcrpXzdEL62Eu2D4pbKKvX-hCmw9EDMUfMBfOBiGdn3Hi7WSBpKYt5DwxTbSsptpwwr15H0u5mcel7QAaCgq6yEJBK6x6wlHQPXpRdzJwpYt0g2PggLsPk_4E1mdz_oHFNHtEXsd7e8bkWK6eyEHwAD4oK8MgWb2gZCfFuxcrIRiU_DpEgYUA3A7BKZTJPFE0NXneU7xV2iSZ0p_qmosVxKmf1CxHqPEl_FQG-GRnEWYqcrBVobSiePl54deN6Pz6OjDFvRkjRDy3iCZjWvcTbY88dfbJk8B6Zku-g0t6qanNV286KG6u6ld22W-nnLzKf5JZm9ObSf5CAnLPr-PgTwqsIxId82OFYWKJ3GAQp2wxKOZd09lM1hVbWYTCezrt3OclpW4M1T9gO0Tqy2HinzCFjEBUyf_q_9X4sCyKH7maMRdEXddiU3vkKZU6u049ebbk3VMcWSlM5qMPxVl8-GwlcsCulHPlSU_IY_Cow6U7axp_VIvLRcCSzCay0jhoxR-rhLlF7TB7iioAi9nwKVWCo=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 24, 2017',
+    description: 'OSGEMEOS by Gustavo and Otavio Pandolfo',
+    image_url: 'https://lh3.googleusercontent.com/nsi81ODiYgZYMUx7WOw5XdOUyQJTON_VXgHO7K44XUHs5Vn_xGvBSaMwOxZ6d3E0P1M-mQlzoIxzz6Ohg6VNbxdWgJ4PNBAx2dZ28qlSB1kn78KyaVqsWc6AbeUQKIENLeikt9Oo6a5nDyqVTREYXJz4eZtTxNYn5iwdw3cLGqi4d4Tm6MCZiS19i60batHi1JBqKcRGoWY0VILd4OWwtzYXLIuZJz8qjbCuZN90NiId8SRUIEwEqal-vxg3CT5sO3L3e_IzWUYrORJe7__jVFQbCZyyJWoVh8egqZKSZT0pwsVO0sKcZjo_PJ7snPccYTbOR7X-VZxB2BKIzNsBx7bbpEu31PhH7m6AvO-a04XRMcMoO56PYZycq6JVe_F0QkYBV1jZ1ngHyJOztb79GJwR4_k1gWho9GcxRsG_LVowZl2XXG3JUIstItpwC1XZA8Bx6NxAQM_8GbN1glUbj-N5_RBq2bGlFYeK7T6uIZnXmR4kPa4PwRoqaMXPY-dIuwKdnTej8lSEh_DnalUpsqVy1Fhooa0cVDVmYBKhESQHPn6G7578sskqWzBCZYfBQofqSvwBWu4vLH7s7nuDJblPUhCbFXogxccY4B6YnSeNa4Z9gERIxkAMI9cmttNSEZky-hnXjHjgLogppIprb5J8Qz1MvuQjE0GdX8hJ4pupFl6Mkx-HPPE=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 5, 2018',
+    description: 'Groovey taxi',
+    image_url: 'https://lh3.googleusercontent.com/M6vkDGaLHWsAYhtbZx-uNbi2dbGTtHcLKYY88eCGcklAZ5SpIY6IY6SLnWKXV8ME9VBfnbfFBgyg2YvvozsBUYz9lNePB4SPwzdtyferUEDI8rBBB8pFpdvMnePI7CECvW69l9ZLr6MWrfaQkcXsozjL-mD43L36u5104VUN-gK5mf6WY6-keP6GstGnGAFYq2MXS1QV9FMdSEqVKMAJMnWLC8MIV0GiAcHR18lpsxgyeSc8QDd6ay09ah201tQ0CTl2pw82tTp3_AuPGrfZgv9iddvXA4Bvch4pUzypFC13isR2XSIziIyQ5Mieuu3KSv4pRvENLwxuu2AzvM8Q7YbKAeXTjYvAgpCcC6hGOlWiHDzFsH-t__6B0qCr0JXsSUFIE-vEdLKDI0VOo-Zjb-MkOP9zUse4zja72AB5EJDd2orvqRCqzg_EZLuAOM9a47WtfCckCUZ7jIF80XnHnfxiodBkkaGiMbR4yPH8OSQoSs7p5KAisSdpzW1MGUQuGoLsJ9WKlBPUKFcC9uJcKyDq6rV1cFItSdQDXatFHheBOLhGa4bn-hVAdnMVYDRTEQoDQtT7Kd4wqRHlp0Je87EeSuwRSqQJp2WEt_A2wI6nGWx7kWVuNUC0AWYP0VisxjwOsqECEJG-7OixYLI33Km7HI3a5mXkx6nw1i5iIc2uFmDeiJq1Ebs=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 25, 2017',
+    description: "First People's totem",
+    image_url: 'https://lh3.googleusercontent.com/wFKhkMO7BlcYfPFXArfflt2GDXC-WyWooRAWE0LLQ26wP3AWaMXw32cn7ujVnnWJO2XJWZoOhvPBG3ntrcoiusGzDoBWozxrz9Pba3dRoUuK3UhpGeN2X75hL2tSe5XVGv6dzgLKtm34bhZ0HQFs-y15UqkWqYzIbFK6VCE1g7cHL3y62aCqw6q7QzRVdStYf7IHu4qPXtHkQU9r0mzbDZqoHoI5I_zlHndniKH0Cd4b4Gf3kIcoaQPDSAzXOgH8KNKllrXkfieOb7DXMf9tKfG4vn1u2a2itTqzZNd8CrpWeDVfwK_pIlOnNz4vj4tng4GjfzQoVcRT1b-VXuHwnmQfL6Q3oiBZTXg_vf7o3HAJ_UcH0z9WSAvQIk2NRd-Tja0ZAfu5SvY9u47wZKGR6Xc4wGqX7ya_EsD7lXnGxixuDZ6tYEytHFcKFzII3NNyoDLIVNqgk988DOTlnfBjsZExoEUYcYrLvDRn58IH_-1TrSKlvfGjERjCKSz2pJaWoRwUCCgrjKpf03Eg6oy-WOa8dj1BR7razjd-nMSgYUjo0mrspsLYVKopNjT3U5-lIxMCDS0ujJUTwVudyWfuQ2e24-P4-ZXcnuCVca143xmQbQ-kiRm5Bgv7mAEhm3YEH0vf-IMY6Mvf34G4FHA8GuaTummeakVAxZpSIGw5AuORTfBYI6UAP1A=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 28, 2018',
+    description: 'Contemporary Art Museum',
+    image_url: 'https://lh3.googleusercontent.com/PRBfNZuZQ-XD94Rtmh4JDpdtfWb-kz8LhWi12jnURA02ESsImXKHiIkZ55NniErQ242iJ1VwfPK60js2effKBWCAICiVtgKkfmDeWFbPQD3A1iCtNMyFfdX9PIHqb7iie2lFIaoL_Prgej9ka3B8nIM859OpdGUbK0ML6csqNP-o_d8je_chkIsnNOjayVvtUg1YWRBHY07RvwxduRINnDDQG1BGWnfKRBskB68zvWxHd-NYnjyVceExFdMyX57dLOX1twpqEbZv8VjNn8CbPwUpHOgPLFccfdSQdLRru74ThrlxwPaaCzMTb-veUD18rmL4Dal4G-uc0U0fNgV0nFFQt1GzpLydc4sFPJtY9JpomQCJJHLWrqNJ8j38DZSc646iCA6PCFDPnMhF1yryCiHrPeW4hXf3zE10hzzY2gWa9iUHK29-WUM0OetQZ4vfYqZ4ULB0z5Q0TvTPxw06mYNqMKYY5yAcELSoxvjcKJIqkL5BgCWxtLnc89RaSr2U0zoB31BAxg83-WqX9xdd11N5IYlv-T5OFXYFUv20tIXmf1K9v8h7hN1GsMqoWSkTxc7ke_utNPZJL5Djb5rTA-Tk5rQXNpNRN_7XP1sGKv8o4Rg4lUB7EumJf7X2saXj_HBkjsYCdYz9KlqgRTnUPRWH_F2WFvXKZ1jlpJkAXWALD9s66tCMzf0=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 7, 2018',
+    description: 'Rio sunrise',
+    image_url: 'https://lh3.googleusercontent.com/6qQxtLpVWyMK_hFQDT8FaxUx9ZK9EXiNDd9C-2KGNMuXbj9aXG45AMIZKcBTufshc92ap53ou9qglLP9dZxAPT8Hdu94KyXoZ0-RFNNNTxVUX240D26B74-rpL6oJXW7iRtSSbNW5EtFZceubvTMRgH5UkPzVAMs6GXCDNdLH4TKPPRTFg6zzcJv5-JpMMhiMdPJsWPqlvnvb6GlP-hZ4MmaxRyhoUbYkaIsYJ9ZGQkS8STEYFI7ig7Rlp1MiMBetulSHsgrKGeny0BSdpYBhV7Gl-7W0RLc29w39yiP4uetPN4q7F41kdPFPRQUlkCaldkgwO9-eeP2rxQgLmrP1BJY1qSS-3oXiR7cerEFgIq-YDPMORTGHKy-ZO2cEjkxobB0MRwaeidmqRuHld86elREw2Qd_Z3L-SYTTdYYgYEWm_q1YtqREQQvniTdTL8ETbAW2x5ffJhKO-4Ljs8FAbl1lGqNDcqBdN0-8-rvWJ5REe_iK6eqvy19kaiLNITfSRHU3BurKRmq9QEdgYQ65BCSHq4TQL3MiDSjZL8vDxnxQPAlHS2jPO2Soa21L1EvkJyH37mmKByX8hpXaF5FXx9QnN4zWtVVtdG6leTsj6cwtxrPnoSXQgG5SPpY8kas3YPBK6cnKikP9JbYyaNJ74qRA_IDu6YDa4H3qNezwADRn_h7Tyucvtk=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 27, 2018',
+    description: 'Enjoying a traditional Brazilian caiprinia',
+    image_url: 'https://lh3.googleusercontent.com/rXkKpIm2YRU7hXO8j4CzVHBh1batlkamKD2Di8vSsvIO3pxp44pnwyNN2hCo2OEl4pA67-0i_6zP_vAqh2-If5i_OupLzrxIXF-WWpy9CDNe3WOWo6bFneSne9zN5kojMGy6oMWlD1PKYlHb9h9qHxPu2GDFtBbvO4JAcl-wuZ2zCOmlDYTVrUsIAwVVtSUyfZWHShJW50xlnCxi_lqSK7DWNWH46hEe1hPQF55O9x3KiiVTAn2UR4a-aOv3ujbNr5O8BQCyktHORHKFmLollwOnPeDLemSn1MF9L_Vyq6YxQzAQHuqUCeTfFXUKoQoY3ms5NPm7qgU9lJ1dA4waITVbQA5vht1oCJqx1hJmDr5kASxn9bLPk8_VX6dm1fHN_nRZOqeD2HhYjhbRWr1VM_12csW8v4oN3l3WVyVZrPQLCUDCgbBJ8DSVmvyWhFiHWtMarUIf325kzGuc0IW3beawmbsUAlo7qpvbQa5La4cz4Anu9bstdtDhC87cnMlvMrwWi3nBEf6-wpXBtTETEcTLO9AZM1ENvzVpl2cGHiFtc-RW1LjkrHVS34GqjsE0rE71Qvdh8Hx48_B9zy5jH-mTI_IzVv7ho5CrOszqCyz-7Ak9d5eiA1o7TDlB1SNwYJvqRLN18RkM3J2Add-40i74R6kTELqRzYpLA5Q7FdLWChVwEADEA9w=w734-h978-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 3, 2018',
+    description: 'Coastal seafood in Rio',
+    image_url: 'https://lh3.googleusercontent.com/_9n1kCyurs3DupAgs4viNxh1XsdGMoGnwP8qxppdHVfskB00tHyJY59ybUqJ-QR49PL5UpB4FC-cbSCsQBABOyrVO0kFeRDJ2mymSz42OybKGl2n2cylpCFkoA9NcPkMszGKePhfRRTgL46R1Uzm6z76XgcL5yV-yt8MqE6zquQ4P2j5-vyXt5Ww343ZrqJqF2Ru-0iSpAgLxiyE-LgxHZM5ePvsSpSL1quOFASVuP3V26F9_eibR8TNXKwHdeDrVqLfk4ZOF5dW6hWNWEw__7offgaFvqKpyCUf-IXiYUonKIIXhDspi7vm4Eb2ONSG3ArQih0Sq81eQC2PI5xj4H0X_JUdJWUDlTae0-DSsQ-jFcJ3EsduTxl0S4Fz3jyZ-rI8siF-Z6xt21uu8khIXSKJs-Icwf8Pq9EbJvlPh8wiGgLFd1C4BjYy3G6sN8oG4IAz-fUffvOvoXFlFjfSA1TwBgkFkfm5xxawcPavWlXzohb0APwcxNbsZAVxrseJKee7v7wh5i20DAAbeTBkIWnoQZVBiN0ta8YZd4ej8NKvKwjDuuuTEpOD3vUfypw-19L5UYifO2uvoUVQm4INQbk80x5109B7THX8SnuteGEXEIcDFaX_L_7mnd36Huz0d2bbefsSGy7VQi3GxI2vRbIcKvsQgkImr_YrnpXFrw5kZjI_1cEUgr0=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 15, 2017',
+    description: 'Hiking through the foothills of Bella Coola Valley',
+    image_url: 'https://lh3.googleusercontent.com/g0ZAvxzkSvAYNBQlODuDHXAlyiSkrx2Ujly2dW4S0GuZ7gzxDqcHlkpb6KfkivWeSL7CMC-dmf7FgYo4-Dutd-BtTQSass2cOXgLRh0mC6I7Si2nkjB6fmVU05voFKN2xo8r7xtcPwzhg33VEMcWmpuNl5qObjB_sKM7OrDn9SoysP4MVy1fMlKVdXBD8Umai3Z7Jvm7tC_5mS8OMd_Md7PYXFZ9u107PIbMB0Wa9Octy04k6a8lSdFpCDJGMPxkdQuMOA8y0WIwNU3LQwdbU2JMtdrf7s97RVWgW12wjc8hHD0CQXJt8jNn68tiwkjatmpNVgzQ0RCWIxg05OCglWTmmxh9TLAbd4O7MUrf2sc4Qm7JAzbnDK9L_Me3Vwq6ujsbxJ6gpC3l7w97vqO7R3b3qDnkyZH_ovTilpfLKurFlbEXiukXqyNfCWkc6EKd8PEmRB1VYOAdloxmMtQ9TiQwn3IU_Rtvm7DfTBzGWt1YASqGHYFLSVZHJltXNzNy73j19QZxbp0StXaUaAdxvXsQCbqeihe_6Sefc9iPj0wY7z4TIzghJE-IHSeI8E4cfzpZPtIlMQ2EG3OlLK6WZ-LJkw-KpPuehhetv9b7E-AMCgPsDGrBUGV3yaC_VMsQmOc_C-qQd1Fxoeyew4JjWmdrO5STRVifslEVczV5XVQ1twMpQeGTK5A=w734-h978-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Nov 29, 2018',
+    description: 'Grafiti in Batman Alley',
+    image_url: 'https://lh3.googleusercontent.com/LoPKTUp8PCpdbSKGG6p6ABnqtblZ8DVZLWtkQ8nlbIcC6MRAAAytEz-MlaVk7IihdHnHY8SluZKPPB8hw7bPnPzgD7AyzAfhDR6X3_Xza2CvATfQTfNraLgJOpbFESI-Gow36wCXz3-2ww1D_cguFyLKjsmKXoIsSIS_RGb3L-_mn5p8s4mlF9dYaLzh8yBxoWqEhWf9EHuD_lZmj9CYLY7P6Q7mxRtEy2ip0p0WFIrrIYNWXgx6ZaibAGcFdACd96QrlWNUX2-omnmd_2mHYncHALc-QZ1Mk58bcpDmR1HZj2ybEHihK326CkRyIpX0ccw-6sduqVTCGildEgsRedSDCAWIUmBfEbliPGTvT9VhDIUDDqBDETiN-9dAfa99c-9zucSO_E0WRGQYm1faX-0gsIsOhTMw6n0oHNSK5RG_IKHnXNDeYEsvhlqqkNiIaYSXKApslBvIh4vJ_Zzxf1OJBr8XK_mvVsckBnLDwkbL074PGUUe-4ivCodwfU8BLjovL4wPo4l1MTXi6aHC2SndgaPQrgtBOYo5enqqe3NLzchIBAofnrEundEiVzbl1n_gMocL6D5OjjqizFlAGinIAOdtt9nwchHvs5uLFgK01-CrsoPz4lsbkxned95AL6kpEK-jDNk9oB9PCLePLemPU91H17HB9UwLC_e4dKWSO_oQdE1QkEI=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 6, 2018',
+    description: 'Overlooking Rio',
+    image_url: 'https://lh3.googleusercontent.com/hrN_TPkEmOweWXloHDGHklPgRlFPNz1rh2dYP76cHHl4eLNi5WSgyYNUd1V0oNJLJUfySM9vWo-SfO2a2nqKBNtX03q1y0RclvLiIFe33hmfONPVUqqJjw_3NrmmKvRVXtxSf1XtHb8_XotXWlG7Ep3ebqepjHlxbG6zW0AN1-6hdfQSTFkzA04zZQlNQdQGNJL0RdiWLd8KZHhHEpW6TKJBJpvkKZZZbbdksV3Px4RtdwccCrc_VHSKKGVfO0ug4zohUrhqtpCvpBp9VLlMLqeJiETX82CBEoHYCOL8Iro1dNZKN2lBZBsBvOv0xtteNNmjNaUcxON90Aev9FbXJf_-O9REmCyllCeFQ3h_oQs0I2ws98bFoSlTDekuZkELlkGICXxztU-RSxT7U5OKlH_-I1EmhynIFM10ciRtRdqcAvRN39AQK43ACCDzDpircGyI6zrQT3Zh0nfjAeR1EQFTTXkzIz4VyaP2OBoHSLhTM6l5NHWat6Hbp83VKdGF1oh-V1X8c-lMxsb7EDdvZxf-9XVcDJimm1bcBbafk5bfI2OIilNFdtF6srADyIhm5Xfl4f0T8pHkyEayQs9XxScoMWUZjDdqjR9UPDDft11Mj26nwV4_hvGnXS7FMW0h1H0Lh7-AFjpdO--myR9R2s655XZrPZDIACOaUrjBdL1NCy5FaICM6tE=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Denver, Colorado',
+    date: 'June 15, 2019',
+    description: 'Graduation day!',
+    image_url: 'https://lh3.googleusercontent.com/J9SEyM0-YpE3RxBudQMTNYmXFyRVfco6IXyoDrFFylpp72x-Kjp0fuzezJimD_Kxrp3vzQR8t2xhdy9VIYor0EXLcocnpkxNNnnyp8mSnemW-LMRefF6LQ-mXaTs7Z-ELTPAufY0v4rTT2FHKxfuJmtP1kFsYVHMo5poj1610pZDSecAQk4IWfxUV1uyAEWxho71f5yomKKQXUE0kQ-KiqrFQ7W0F91lbJTjwG1tT1gAWyH21hwVBQtq19e4hgVMikkYkGDd4Ydgsa_-UCGj_nj0ENmoGigGdFNGR-D1Q3wd6K8M-5gi92GP-4i6trUjFbA4Hpou0_Bh9kuoLO7TClyFdLmStR95GgKCCFZFNL03MlCh2oAZIqKMRprbj1XI4tKmttwASva08533dsEl4uf4kE4iHudLzi4nVwo8HpieLzz0M30DezV67xoIVHUFid4jjEIQohF4wGCijA8FFpwFLHNPBgINx0TYjFvE92dALthT9KzZYc-U71OTnQdET0T7U1n_xWEbrpv9hIYya50Y7hDDfWSY4YZOrbqYHZg8HQni9ivG9xCCkUskoCqpma4kNN_is8dFd8jWTYg_1ABggiv4GDCpUY17xMemdOBHrvVh4Qq_E23uXaXMmOkoT2mH8K5g1AMQMbFbLBZgS5rzCIO-4OSUECrFCG2ePOtfYK2--6KqcWA=w734-h978-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 22, 2017',
+    description: 'Hiking through Bella Coola Valley',
+    image_url: 'https://lh3.googleusercontent.com/kXrz3ghP1EAd3abAsH1P4cywv9rJyhMYskhP6lqvyFMMuhFob5N9U8A-qRGbmWzKM7-CbfTFEo_MRduK6PCuACFGj0EC32v-I_ZNMk8y7NMKQZXVDarICaDNLAepHrP9_MZ-0nD0n9N6JiZQ-raJJrK_ln8CRuLT_cxF9rJCWBurDlx-2cI-5gz761_mISUbZkuAWX8n2N2dHhwOjq8zTSukLUNulSZc3EYuPQkPybpdFzmtaJ2pENqnqZcv5viQLzXeZRz4A2FvOYjOT9NVsKZO49AUG4ZHoZZ2tiTvpS1diUOka0_ZlbaHK970d6O8UBEfXaZdIobxv7v65J2YPA-nJZcpFOoVfFdMufqVK_tUt_Kqi1QSENefQr4pfLaE6CABBiPNYZixjbaSq3AceNzp6HjUcgmXN1qycrxk_xrpeT2cnHH5pc6bJ2tZtUtKylTqKpBmP4csMmaOcNuQFBKP8CeN5GupT0G0l-K4UB2UpjMmP4Y9WJ-GEgXBUjcpNZaNViQgd4okzCCxFPr8mQLrFc6IFPQLzh7naIvW3d2C0uetUOLpGqyKJbaUUAU412z9_StqfJ-Rq3EcCDFUv_fUoqSS-4FuvARQpWxU88YDl-oB59481Ox1op7VAfzYzrAJanVA2wtrq0MU5MGWkiI_PmZvzdyKtwR9KHCbwPViIJHpcXFX-t0=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'April 20, 2017',
+    description: 'Adoption day',
+    image_url: 'https://lh3.googleusercontent.com/p5KuaxQM4_CjwY9D53gzrP7i-7hjaDR-28SQ5G-jlVxJFu3kIh9EePc1N7RHzferw2aBlLGubGMHf_h5_wgXtBYFiQEoqC1aGw8Xc_zkHLdUAOE_Ni5yKxLk6m-yTmsX8b_Jjqv_U-rJioyAmAU5BJt7BLy-GMSpXdqJ7zMYoDtsXzTFBTHqorrAf-2hWI6ckfwXLWGw2u7PGmBZT9awYjqFA9FSlVg2SRdz63aFylK_niPMFd_bC_xmOhrVO0MXokzti_mM5MDxW42x_4KG-iTh2Gta0PoGYNgChbv3MbKsQKQyCQsVcp7DCVDNb05XdYwXPrSl73UnNCJLtPQC-gWpc8YPPfiTq0PPFUHI4S3ALT_m5-2HNQjVSiAChf5Gj31Wf5Y727J-kaq8uvJMCWCwDSAS__z46eO35AG4kBqoha26F_Ls9iJV-VHbIIkewTyhUvTPCbg4rYblcA80y4DYtwNjz74YwNkEBEIHKuwd8jabEvuBvWUDSucubrXdSi8GrKNMhSpOmr6_qsRrbVfxlbi8jdRAl6zjDSGra2PBZ4yjCalxIqkKNS4JN6N5GiMUC-k17W8Q6SunWlG2Vb_pkoFvtLKHNS5cvv1bl2Pn3A8zsVRB8mIuG1jfufc_SvaG75_OOMm8nGkSz_1O4k5aRB4wndQTSITB69BjPoflvFeTjLNss8M=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 29, 2018',
+    description: 'Laucnh dinner for our consulting engagement',
+    image_url: 'https://lh3.googleusercontent.com/ncd8ep8QV35EdoZHeGQkadm5yPsBlVMGQ_eG72EjjT-6hZcqFtpQon6-fYKDQzz0DOmAQH48TkDLai0pcZwrJqrSx1cw4-FuAKVEweRh5HZWLh6sWf0rQGzSN9jHxRqazzqNKUZqY1t96NTt6rHR-e7THfRKxp6NgUZu9Ipn_GfckzElzYIZyimFtR5tNBszvwaxUObS5zFD4ZpXGHRmlHpTZZ5EDXX7zdI1Mv8kZzH_3w5gIHUMyV0QpP82LZEIOReeoBy4tKqYUDut7N7fUPSgI8f68Gfqw4tBK3WS4k1N0dTwt-DNbZjt8YMACvQe2Hx1Y9Iwne7nLAbsnCp1CO4BHB8zaTzbuUTzHBwdy9vEz1StNJ6JBTShOqUngjhhuWiAiLIObi_QNa-tW28KmB_hVxwDzqJ642GiwY5AnsK4JUZS5J55xm35knbvJEC5uUF5wxJLWZG63wVygpc4tZ2m7C4OevfFpSFpLkhHaqE59W1wJqeOr_4iek2ocQdoFo4JmS2yfZK8WkKx9lWkG2xE2zN2NxF7mVWfRVpDhD5kftqiLG19vCY1ScSDD7lC3z6PdhiXLFnWFyUchPe0q8RUAEwMrGK8NAcHvRuq_Z2daVlqcHykXl0Wbjsr0oaSjLA5pGfEJEYEJItgewpgCe5aCK82wfSuQIE4N0HXCq_ex7bquHMjWFI=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 1, 2018',
+    description: 'Graffiti in Batman Alley',
+    image_url: 'https://lh3.googleusercontent.com/xJRTCWonkvkqlhJtUYZJ5X8SmphXhsQIGLlfM02zhl5LSpi8Qp-sOdJ3XUD2Uy6q5r9bBtSB55gMBaN5tVjANWclMu46OPyOBEy5hMODo592FoUnsNb4iouPw2-HbFw9ohdnNwyLm3xeLJY1b5-9Iyc1GgOetMc7O6eT2qWDlVhicjJF-hdAkEDdaMSpoj5O17eajwciJTiPYDwm7GuBOOdEy6VQkoEzix_B4u9yKA6OnhsnzCJDYjA7FF9aHBIbPQSPKwFLtat2qSP-jdAU2rJmX3SYrFLA2Ck7aFg--4YkbLlpZLTOz4gYIUR1P1hxPqwNsiZ25PIXeCSwWjFEQIjtZhJze-P7MvveU_JVc0Ff02apLPsnoIB9miRA294UPRbftEkGg-JP-iSMbm6cUyddCxooQUjT-Jek1I_WdgJ3JAd2u9dW0U8TA-kFmtw_WOcNSnRHligEWPHQOuM7sXrNhjYuqr3HLLWIiEj20WP4YFLex5TULzxmanth__GApe6u7aqtIhoZNAo3V-rdTLZGpHLClkWuNRxdt8KYaZIOTQQNJ9GAH-GhPTa-vK_53bFBBaZwWKrtMy2nyZxE8FLUJhZ6JMK299IkvKPv63WT9N6qO42IsEhfRomPG7i04EneKrL9uQu3W6ZFt2LLwgSgNI97Fy5Q5a6sk7lCEVB_yqvrVI2arSY=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 22, 2017',
+    description: 'Hiking through Bella Coola Valley',
+    image_url: 'https://lh3.googleusercontent.com/_0cBD9cdUGY1okzEjeySw_ndTZkSJOG9B01NkREuU3pW8E4QGOCRqf8uswiOG9ReEOQcV8J-irCsHa-_cJRQreut7QXdtUbs1aDuE_P2rzSUDJkP6Acb8_u9nAb20tWbhfOcEK2kPE4BJfcd6YGIDBBNyrCZJ4EDFO961lrus87BBIksPl3wOVGPPoXpIht9N258MEh2m3D2AQre2SUlO3Y7hVnXwXTdhKH_hl2q0r1M5QrCiTeZeJWAqUguV1JftUkSzodwGquhKRmq9X4KZAcDo7pHRQzHsOxMOD6SgGxGHt58jZAGngg0aBVg6-Lm5G7GKV634EPtMfA7Pe7EFg1GH7Vt-u1177aEj-wSK3WF3aoOQLxH1P4XeKRgbkreXX6FKE6kBNlXWtQp-j3J_EKEkg8HiYO0mVynTXN3MfwXBf70k-MEZIZEv8wN7vx3jK_3PH576GTU7IDRbh1q5u7H03eHUBFUIHt6WpOAix9eRHXJHv0r53EblljBhHFtmZpC01jjtdRKZGuyhQuG8EoGz_sGs6YZJ2GxSKJgFSpGzI9Xb6G-C_LQjLBzkb5U6d_x4p2qmyVzwN_scFT2cL7Ld2QncOPcb9S3i8mm59hsago1WGAG6RHDh-gcXOstoUaOxW0jF2P0e72kBXbH0rgvM0ViGccoYEmmm5x3u58ibH2FGDuP6J0=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'West Hartford, CT',
+    date: 'Nov 16, 2016',
+    description: 'Going away cake',
+    image_url: 'https://lh3.googleusercontent.com/rEhG1skOMe1xuBKD3np6yxbmjApEga8LGTptYYEJ-VgH0QI7atm3SFLeJqupzhTjweq8UemBYSAmdCj0i1adEgiTvPiaC4mIBT4ZIK2B3JlsfO5SLGzFWyeuqgVWXn6F7qmXX6cfYvgjDuVpgchW_DW54CzwNgRzDS-ONtVUWq4QxRjWwkUkOD4RvY1wrIhMUxh7WAFwmrFBGOAT3cmEnVkTcD5kK9PJ7VIgQFOXdhUaRUVgDM9wEO1TdEAPXlLUC0HOdGS9WKLET9wbNYWThY7_AqoowLNMjH57KrohVr9xP8VtTz58UFYrX6x1F4qXKQSQRoueTWpEIxuDN5s0acWSDCxztVk9_dgFpbBSjswYOK_3ABtrPdibqervbPO12stet2QV46FnmMG9vZe7eUg7DvikSJSp1CQvaKzBsOglpszw08_HgNHS00CETGZUEL61q9IYpPwiYMPpDjfAzg_sO7I3lR6cM6c8A6-BnskAWJ9FZJwHffr7bRJjAlxmLXPvt5CdbfyXH8Pv9yrrru7ENjirqLGXm8CBxp-lUmf6oURQ_USxwCr0OBTv3fTY0HAEmABaRXMOYdFttGZZPgdENmnMVnWN8xF2SnmlBsH2O6cJP8xW-ffvvy1bZEvTlRPBNQ4gfopCtqQYr3_Xh7x4Wt4oPOko8F5Qb7tPx5l6hbVmoOZ3alc=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 29, 2018',
+    description: 'Enjoying lunch with our partner from Humanitas360',
+    image_url: 'https://lh3.googleusercontent.com/BIibGhMUyyQpZMPkE9a2xx75CVV2tVdgsdZ1gz4bROR4gR_AXy93lp3ZVgxYNNPMY7gP_wiqOL_CRPSke-ISQTnzqcgotFi71OtNgq0NxPvXMvAgo77kf98sMWXl-YeKSbSScZmraW7TiubwNcFMvtGIrOhjmlV1H_pwbqBzQlZDfInlnXxXdwcXFq7-k_p5viPdJJkaRidvk7OU_TlGyh-hvdCQNH3yUFzK7kUnuXSpXE-ENCEo7ejKfL4TJdkOBBocew3144tpstRvDuuDGFdYYCtGxtt7QTeRb51pBaVFFYIR6MyXaXY8-8Zdd4HWMLHH0-VNB2EB-CfqjcY0pe7C8Q3hwNuGogP8_12-FmnFDYca7WcAV4RXZ6rTo63zKp3ClKNxZ57bySa_KNl9xr4DEIKGUXcMahGc4xOrd9FKnH0Q-TJS-gAazm-YLH2hhDxiskTBrIANOt3112JrDpJTJ21dW2FfiKUuLy8mHGWpiAQH5anEtoDjJg5OaR9G9T_2hzzoD1bK0PydgGg6LFxTn_7KK1yxe8YoF_soqg7jm77Ijx4134IiNur9w0Em2Yf9NT6ho4OFXM4QrsmD9dVmjjlT0F2VCr9zAHFrEjDF6tjAIeXSwV1XZY8th80QDfHlgGFs98wHWG3w_SqKLDe0wMsuCtp6P2GC86khTOP56ga7lb186Zc=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 3, 2018',
+    description: 'On top of the Contemporary Art Museam',
+    image_url: 'https://lh3.googleusercontent.com/6Hs0p1F36QR1s8TsRusQ_Si6BnWRIgDsNg-0iS2CBiQjSf1fYrm7x4bMrU2K1I335_yAIDJ-r66tCGOqtsMkkljSQw_DoeeXFkhg6ubMB4UA5Qy0o-70kc0rRylyGvh9x_YyUueBPqD-93VUZCccLSnjotWCXzFR3ObVwfa26MyZqc6tU_ND14EBoKMyP00ZKHDDXK_DnHEh4KHIXqHD5BWCqWdnejMIswAXjKvw4ldv4KAeyRVMDLI8YC8cRkud7suyrSzWtPZLD634eUUP_cM4Vkb1vbSp61LmHM3TeJvAMqDMmBtUJly6gemuqciyf_qP48JVxTRJChb-uih_5WjAuQSw7SR22P4g455JuViy4tBTEK-uoAHwHwXKuLBhW0aaNPCzzHxCsiDZmU6uGzkHXJRJw03G-96prDAI-C0K8wXut49gt8odvWIGcitWc6iPwu_tAk1-8ZKrGkFcLafo5YOqTVoHGIi1raNzt1Z8hoIxkeYifTeq0vsygNovMtCzQfTjQND_P0jYhRZThn29YYQi6kHSqVyfC5Q1VpNkgnXBx_0necT7c0xiUmraeQwB5P4yB0W4C9MyQXOJmOwRwuACYMdVLXM-DnCRLkOqK2dw_4XIX5Oeu7TMIAO5UGYKKjIZwkyUX5bRBrz4ZxG6f3VWo2-58U4B24nNV6D2veSF2NgIz00=w1182-h665-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 8, 2018',
+    description: 'Enjoying a delicious dessert seaside in Rio',
+    image_url: 'https://lh3.googleusercontent.com/5yl9G-kdzDxYZSiFUxi8vqaP6otP5yWfpxuJKtgS5ywzhxquuJ_HtMar7yONmHfut4dMCZSdXTFnNXR0wP-ZEscp9gsgxWUb8Ikohdz7UpX5pwjaHRgUrd3sNctknKt-WKyCxEOYvMB6F_YWuHuUJ4VFmiQNJrgG4g93niLTi_lCGJCBoVaPyBA56iIh6rqzhag84LIVRP9gjtRXigoQUvl4UfnC6NNu-ib99plu9n5Hk3F3Ccsh90y6HFi6JgwVZyS5utA-JlCBva5HqUIRUxUJSMeipruTrQn2gDfXzTq97jmtyCVgpOdj7COlgOspOkfVo0xXZgR0Ee7KdozvnIwJzzyPXANgTNKG64H6kfGwFJrxQx8ka919KZESnOJDFY_9Ah1JnqATTIbjR4b8ZpGdC2EoSGqKzq5tzINUioEayrvKEKst93VHtZvp7ObkTQ238IVHm1NoeCYLTNxceYrjfBL_3Hm4ytJrLuWhI9l9aA03u79QraDy4pecu0_7c8lDO5FdYWqCHs-a-Fty0OfmXdWNh0IVjP5kkro2aq1Kg5Z99uFtvDC8X6kpwIzgRBLeMazX4Se7gHbYPmCWBwteQbRzKs7T6hAHkTETRv3MrafjPuAVS9TQ3CQ3QgRPsg32eoPC5LuiS5CMvNvF51kOno7lPhJyuR3kDQVGxj83x81Sim9mglU=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 30, 2018',
+    description: 'Pele hugging Batman',
+    image_url: 'https://lh3.googleusercontent.com/WfE5TRT4Z5icl3M5cU9yhNOhTtw12NI_UitR5ll_Xxzs4bqikyBavVQ-ERADsICoiT7MNc8ynyjhL5q437enO2QmrfReOpM20Ap6C_iS2d7HUlVCMAH1Km6C4mElGEfGLksApQHYN3LmONLQqlqOMO7s7to4kc7DEBUJy-Fx-p6uHP0fCSGlML0yGUBVJyXXm6cPMNYU0eVrQUPsWh_xWbobbGA3gEbHtmPWB4zpImudqHmrwNEvjLQDqys_DRSAlwPsAPJcsqYeCGvc-S9ucjD2dtexBteiQpGAQ4ZLjcZfRVaNKtX7dacvy3YbNngTGA99bU2Q51-KKdSFxD5lT4lDa_HDGvD-QLwpk53PRb5i_ZeVKAXoFiRB0uaTP87ZljQHi0WX1seSxb0CLJh_q7eNu1s2-YHpzFbhhcKuOjQb2puXctlq2CQVwBw8JaP0NkNZVBNJNRJs5eVbUOYF8c55R0-Y3rxAixdREjway0O-6VVUCXDCxW95s2OES7ejQqaegu9tVnclLbq1rgjCbAXUT7At-Rf8F8vA47vL0Udsqifbut7osv7quV9oKbflVBoIkUNCVwrmZnxmZWwrXzwPO5nZhEUeevJ-eSgiOD27NoLgvirRhgL-ZYtgqNPunvbiGY1GaOopi-bohvUpwHZZpS4HraCJkyfoBHipe7CScQx8JuxwXGc=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Vancouver, Canada',
+    date: 'Aug 23, 2017',
+    description: 'Lighthouse overlooking the canal',
+    image_url: 'https://lh3.googleusercontent.com/87kKuD0l7Jogp4RMnOer5K-PO2t8HGEWG_P0P3VQWkzRPU-OPiG7x7rIP96YCChodc59R74Vn7U3FCXwKKHJp08xHHep05S7Bt027LPXan0Wh6NLWGoWF461A6euO-3WAmz2IB3q-9f3jxoldGesMhnEfa8eT2pKQwAIVdX7kUjl4kYIgST8zR7gigqtr-5RaQAB3-jhFoD5EaGhRRW5QQEPiTXIsTcnyWtOGLDC9YgcPsOROZymNoUGjHfCCBwVA9jyU2jJbwvBYmSUybZlis4j7ji6OdOO7fq3rLRaUZNW5aSE4dtcEJWNl5In5fNcUVnKjMzcPp6UC3jUpAD_qu6dSSPy9ghu7rP5i6mbWcnpKG_DNKyL07Zn3V85ncierowiwMU7Iq9G4KRqWnXTSBGfaxGJiSjqAMSlFeeRiTL3oklQKbjts9w1qA4uzVaGMwrB0BhVRUAxED_79OGt_w0A5cb6dGt01U59joR8JUvgpHTBnBJxQsWVamFIpbCGLPHpYyU1o55Tvgc2xWz_E_VISh7rCxj9OqyglgucMIbfKIx76JfOqxF80S7k9XILH5ebyGYlXFFZrWOkc4JQddQVnGQyY20U5pdWej2s1Erir4DljKO0ZLn-FtbE2TifZxtDLF_u2-mLhf1av_q1RAK4gO1nM6GiaagSTLZlqdtbNWVHNJ38Lew=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 4, 2018',
+    description: 'Fairwell dinner with our partners from Humanitas360',
+    image_url: 'https://lh3.googleusercontent.com/I1eVs6ks2PXWdrO9pgLf7br2_TcG46xwX2cB8y_wdIVXlGqRvJQzlDNf2xxJJokUU8XrhnCDNsdmDosP0TguYJ1QVldhQdtQQnDEqRSSZyFCjs_x_fbbpN8UELj-9ZB7DFm-BCft9E2HxKgW2d1KWIWaa3ReY-n4kTI7VW_GKRym_HYzveSqoBMo0oW8aeyNfMi5vCgCnI06ALXHAvQbGx1oBoYWPadMAYtTmjNOufu4bUosc5jTxIueGpCHL5Va7XQSzLDs8yNzMjklNKVNTOvGysqZbhaskidhaCLRlvbZnBAWMR84LQAMZiNkzEY9NEI9sVhjDF37WwSjhEIt5t1CaeygFkfznvhWc9EHfxk5mRT__0WRHtWn0hWZO4xtxrAImCPqJbGR_dmZm3cr4Ovfnjy7xmN92tTC6Q2vsnRISSgWK0sN4BlLc6JRjfkD5L7cogO1ughrDypJs0zbAOB2gF3Mov6pWVGp6z3KLdFdY7BHXbJ2Zd-bojexYS6dwFiPmGaAc7fVVXYKICzJnut8_YeJo9hDhOABV4vORD6jqdMSZP_EtA5bK1_k1R0eTRaBcMuGnTPGPTq0OMq3ORuViHAhFncnLVyOFNdhRS8wlLEsEVlxNZSRAsRrno2PziQGdJZKmvjNXMAnY4Ow9OLAhmSOU0PKgyuhNTEuV8PVQ9LdQRbn8Qc=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Vail, Colorado',
+    date: 'May 16, 2019',
+    description: 'Enjoying spring break in the mountains',
+    image_url: 'https://lh3.googleusercontent.com/BSFjwadTch6FoJy-Mibm9yh5GFl421w6wvmCAyv5bjqkLIBDKsc8NzyvYQpolDBZHfpqmnYdnI6UlpP3CPaIzdyrQ9bFsvliWFjrza0E41bzJ8hPbXAErIVOLQH-rMucmEPN4GCH6tAbJ4EpT4-INYNv7I_-ZboFldzTJ2k8MxHzttToREKLNJ6WGAISDIlKxSwSn9A6-Ei0y4veNG57jSYG0BLOK7IFyN0ovzRtg1JNqzXEvx1qq9yoPVpc3KBu3eU9etOfESavqaiA5YCHk7gTgPqxNHvkCTGm52OluiBxmodLP9oqbvCSXNle0sJF2CzLqZA1NpGeNwgZG51WW9yu0g8-QdrI7JNAsSesLTS9DUj2qaXCpH45zBMO4qIhctsIppoI7_Lm4gPNwjulVsbzoJNyCnaCaOuPJqSZqju5j_K07QWXFRLAWso1nD6Wy86052UtHGTyeFjVqFw9i7jEHOFIUiIzggohtYCIcmtfEz4Vcmhg5GWkPd9FSFJFSlWCyKlusZxMQUwECprqeK-mhfHpDDQyfJYa01cxc_1Tx9PzN63O4J35a6fVS1c0yz7Y378b3sqZ0TcqDjUvk4x2DYTnFIMW3iU7VGqlGPjynE-sLezHwamn0qT_xwOH7P9CybIIOO5A3gfEdC4DSLFbwh1jlAUH3OeONcpJXKsT_88aPgCwquI=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 30, 2018',
+    description: 'Meeting our partners at Civi-co',
+    image_url: 'https://lh3.googleusercontent.com/INUvDKyZo-HzNLwTeavqMb772o3ArhH8C4dRt44UdQRyKWXtWFHFBEqXPXtJCQ__pYqJUnEYl_5_Ispg-2QKOmtzTk21T_7yPM73d1ksrD0c8es_0oQ98MYsHNKiNOCrdYBGIAT3AF5PMLo8P75e4-SNFnGYSKdPJsDVLmBSzG-6AsL5jfmSJOAtXbXkmyCsD_YVMVQdq5-Zsq1yaaJ2jdLgiEDMI0ouXvfE2laZDYFd5L_Jgib3Ktk3z-Jzz9WR0x8cGyic-ucT0P7vmSVKI5YH2uByY3qAWgZh0LQ-ZR3xvGmITgWHB9DMJ6tTB6QTTwaKRSebgh2quVLfBDgnEhljVbbrwBudtNOaJ4hOZ2jbROoOW6iOB-X_BBxpYFxs-FB0BJduLHQBNqa6jFQYCuwMlUspsDShIorj3VHS_3n6kDOrk_Zd-B9xVuNit5wkkAzUA1il3o9IZ91ivWgraeBPAVtgVMPCMsSgdR-I2LrYYTTeBrcxDnPrJ_63x9-B4KrzB2Z1CyQ8OUNKnKJc3lcmeffBDlbZQQmZ6AWYRH1JU-yyF7EqAKuUA393kRDEoTc7onUoGHZWZ0qwV1nlGL3_7CFjslM47Ny6Hg9IWIRGXuPIRjPVLNmd7Ml5sKsSOl61s1pNiAdLdIhP3tLdwyppSOlA2TfB564s04jD6YKNWomaZbRrfEY=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 30, 2017',
+    description: 'Helicopter flying over the glacier',
+    image_url: 'https://lh3.googleusercontent.com/ILbs5CqRTwfA_7uZc7tELYoKkYNuPeb49oZk5lSWVuBOZ0geGh3VQdROxHqhknVPgWztaQXEfkjotgxjHlqC4Da98a1h1ggNgLqv7hvNfItQk-GsExaRXChiEhWBRD7UFGvNYNN6G6cOsoWNN40GrcmPYF4tz0_wVR3_d42Nieq6wpNf1FsZShiMmxV9gAzZu9d1F0_Sx2CtNFDJJ774-f77XzHxkQHprkX-jBHKJIfp2NWo7A-6j3apLm-Gu_Gwd8jgNHbXKUY_o4TBPTd62TyvmeB0X7ab9cbXFBvU6WtNmGuo03f-W3MddUbwGUNR4gf3QoGzEM0v1dDcQoHbckwJcnm6bBliSouUMK0hHdK8L86i-sVhFT6z6sKkTmKNHCN5ntWCnesctpVFFPC72WwpZ_cUiCx4x8yj246F30sJmelZqOBvlCOFOhPve14mJF60GtKOQosjn7CJV_i96bZft2Juzdx3Cw7qMr6Sqelf5KamgcozaR-5x9kF16yJLM7ZT7UJYQRC1IKGIiMpS3Jha2AmTlS30qP8t_PxeJMfF4MKCGbUdC_pDkSTNpoHNmjn_A_SxuvbHIr9Zq1BHO8itz6wqEJkFshvq9kWjsGxi1OnuJJ1IJNimqhntVms4SUCKX_wfVbrxMDf8iFwTmFn_9w3kw9yEmEu7xn4uOAxgmkHu_Uf7Ck=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 8, 2018',
+    description: 'Rio sunset on a boat',
+    image_url: 'https://lh3.googleusercontent.com/a2CIPhvWDLXXlDineJTO1vOSnN8UJOuIlCGuf8u8SLKUCkweT0j5v3afbxfilDQ8xTHmobk3akc0Ovc__ZM7G5XwZjk0RwnPTl6c3izl_EuBr2uF4Xqbq5xolGqsDd3yNJoJq7oYRS2-Uj0pxqPZcYURBRV7G_eW9ES_mW9i1dl8nMzs-2qFxdPZe1lTdA7Q0Ti9xDaysOHPP9WhTQc7NVw51ZuTFbxyfWddUrQ4_55M1uULZ-P_r5nBr-WtVig02qG9CjuRRdAjAcA8REdXvY7Ct03OmAjjfGArNUO4--l5i7UPrQbG_KMtsDBBb7EtyGTg5ZDTYIkAk6N_uzIR_vtcqGrCt9tU-IbRN3o_rEIC0LFu3fI7aYUERVDrc8ChR6HUVvYrsl_SUJNgrHDHRIVfbGc1bGC0CW1OBdsTD5Cdmaa5ldOmz_ENG6tlzGZwjykpEC9mb3-jmNO83LL0W9j4EaLo58pm8Js4JwuANTFKXZbAzTb4YgmPE7HTStik6bZorOpWwusnuMECXpvuYepryoWKuN6lBug29M-2qLpzVsIw7vUrIsS7qasO9kFOYjUQixcaLI3s7NtpRWL3PcWb0BHSB6rqHqgfs7WSwF5S2XpWfxiV9ZZJJqQ5-Lj5hJwk_nxawDddl5nUAzTBOHmUPkHZlSQAYxNYyDWp_d7SpUAA1RrFBXM=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'June 16, 2019',
+    description: 'Graduation day',
+    image_url: 'https://lh3.googleusercontent.com/kCx8Sl6ALQTIlyB4-gPMGIgUMJIGHajWU57cB0-r8KpPzO_bdevlhXeNEfeG4Vg0-Olp4a-YyyJdwdZOOdDs-RxhnV91BAyQ2lnozdcoELTeFZPaepoJ_V9siP3zuk14hGu-V7mJ7bgFAKbUj9JbK-2TwizmuQwyrGcI_xAmky46_bGcoYEItTLr5vFLz-YalKvrZ5YF_6WPduPFgK8r1rtjNmXR--NfxTk0fS8xQwFNxlLR6OmsaWpHcPFeQUhiB0GJe47Hso-0n4ofdDIg2SgpPtvBfMrJPSY9xAWg5-IvM11OGAzj6iG2GhLDHydunsnZ4QD-jHlIRBZ0xrY0zVwsKIHE_r_ep42EYALclc4US-ZVo7rbZMHnlkyU-VHjLxU3y3Y6cJGvUmkSOTC_mX4APXhXKTulcEps5xwCW9k0LPKnNXMTe7PLQKy6HtyKyrXL76NF7HNopRKae-Zw3SXFr8ZZLqg28Z2_cV5-f7OtbfUptAyqbn1t9IjOWKHBxKTDi7NlmjyBk9BMWm8U5viMEY9QmQLUrEhMmXmJYsP0zRPa6mq6B91CFzQrJKrSkJFFRpUhPzJk4RjcPxLazhFtmvoGxIh2sN5DKGo43fQCJmC0nT24FhB_t4qZh6cPWtg8hPOALZniIDw7RAfllWwWr0DHTmHilipoy-CB6gcEqcMAfIZH7iM=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Croatia',
+    date: 'June 28, 2019',
+    description: 'Waterfalls',
+    image_url: 'https://lh3.googleusercontent.com/XXelPY7igErmTfYuvjADDcd_uXHq7UjPwGaeANEXqyNanPHkLsAIbkfWUHU3zXxgL3BeMiId6oTERXuqL1echpzDVIErkJak-mU5HmcLXDtvk7n9xeqf_tphUR2o1cCMUQy409gCTQY6XBmAuWAx4aCy87e9Caho3hwq-zbRoQdi96B3KGr9ehn2lSqyClhajOKnOr1M6gZVBe8-aoE0OQNFbWH33Ul8yXBkL1yUtSpJsa5exNWlCbYHLtWSVXt-rc_iDN3JxfUiuuaJx-Cfwq3lRUccNhB8-QdS2NuRtRqQUhgGlryX_7uQ7JJHXQndzeeRJV2YozR-MXdxBjMZBKk-X5mGPzCU3frBOQ7Vrb3z4a5Ut2QrvitqFusy36mop3h5blAIMWPqt0n0idKdbDWvUtSnnJNPV9q_9-TuQDaSgacHUQe555sRNZsa-or7GXuxprp3QpV1tzWTC9ZIj2d3GI0FXvucwwUea_EwVjQw9dd_C61QRHS1UITnimlEPKjl_VopUVXS7tq5uLorynZRVfJFh7a0YQvHIjedREaZ5O-Hs7piv3QyaKqJLO_affZLFIgUZ_88YFfevXcG1MQArl3XYCdP3_-a2i-pc6y-aX69ujvhg1qxtt-4wKCr_8O--kB9fp7lOWuZgRBxpwY_gLxW9x84m0NVoqmTYiMaa3fpJ1KbH_s=w730-h561-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 5, 2018',
+    description: 'Walking through the gardens',
+    image_url: 'https://lh3.googleusercontent.com/ltMXtEeJAWY5B7a_ZAVhEjuKXDhmwKQjufIXaq1UCgjuo8B-1us3AFMRwTKdn2VoxbCVJ-OUUmmIzIvIR3yiJcOvOOo0O0FSpHuiffRCwmDUb6IwMZhg138kd5GO95sDJYbLCJJ6l2KYjEw1-OICB5VdRXdf5XXwxM20JmHEzX4K1FAaukNRUHt-70cR3s2_dVkNUmW02t13YSJXAy4U7y-McxhdzeKCVzisESaAO-4tIMn3tju4aFDPjoihwQLsQjB8gaSDdhvcVfnMlSiULCzksAWW1LL5clMduK7TQT6JYlVIq_5x-D2uz-y2z0-FgwAjKOEZ9iPxzdxBWuLrImqYPEXdrAwgYWFEmg4u4Vjz34nqPL7ZVIPAhYFeX31D9tgFXiX-zje9qU5kI-Mp11S4rjpygThLfgabcl1B_RnPfYGKQI-Kdwjyyc_GICnaB58xvP2XT3zgc93LNml1TdUnwfF01xQjhDfZ1ruYtDBsTkHBJA6aS94b1k1vy5omNXoldR5JwWF34cNeLSbQEHNBXeI7Pvk5y7jBU2RPqgtyxHu59jU6c6V3BmtLIzBbgJbCQhs07JlOAFH_7Bh7moZI90bCBk5I6BcL6QWftzDGS5S1pW5A0LXemwqpa5F1fd1V9p3fyV8qeLsIEykkC8gR99pLBt8YE2K_qr_Get7Pjt9DKpuqc5U=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Bella Coola Valley, British Columbia',
+    date: 'Aug 20, 2017',
+    description: 'Totem pole built by the First People of Canada',
+    image_url: 'https://lh3.googleusercontent.com/6CxkNFg_lAaDxJiQ8bTERU7Gr5xFcp8Bc5OgkLuzBxVn5nvZbHq_j-9yKmfyOt0L9vkHrIfWrQFWQKMi9saas89zk9qks4N4JJpZ2YGEHY3h_wWyhxwVEst73c9QFmAmcCPbUtbTZmeITSUYVhPZKzk8oNvd-KIwzp3QaymxAFxndgkSFeOQO0sJhvWIWv6lI1DZYxXWH0QiCPadQHTN1tsfBSy-kOzNoI4Uay3mozOcKlQvIm3tgLNBkzVfzdZU0a6AuvzSdBqzWah0U39O2gS0KFlCTmGDlHA5IlQNHTso7tzQRgdtkf5HJSUsateMq7XZhWc7G7aH_djFvieZ2w1XkezzgcbPtc2aQAuWEPgiv-4maj-DJDggZqwU8iwrDoE6PqquNvM5yAZRHwPNwPu0TRAlvSy4Q-Duc20NVgpIAH3cRzmCeOzPMY8m-_aZygkXSmzpwCS9pn8JWpzBP77t6CE2de6huouMQZaEyf8HXZmEtbCxgBxzfIKEeTROD6EUm9Sfd-PDe9Nb58au-ZweqT73BXqmgtlkjTVMVd69lAfvJBAMehw2_prTHh_GC-6tK4r6d8U_3CBfk9AbQzyYUKf8R_21JWB8rktt9bw6pKnxIIaBjrbR2GMQWfaXboFL7-dyNNQSblPAv2MsIyK_32AfYI-W-gALIZhl3dOuRNk77-f-1Zo=w734-h978-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'June 16, 2019',
+    description: 'Graduation day with the crew',
+    image_url: 'https://lh3.googleusercontent.com/qqqjEqYNIdMDo3EkxKksvoIKgk3nHfEu_18xAIUloqZcrDHg-9MCmHaKe3qKDK6LoqQJ0DNRJEPAbpBzdVSkMYe5BHfLFLE6KOAUFb3iU6vOKoRJ1ELtO_-y_MgngPOqwLUulOQyYLVSy2ixg1E3uRNHFrwHclvrNMJTZo2S4ZONEZ500XZ9gYn8T_P3mNtiB7dKWRC1TN1DNAm3Nl4XS0lVmxqQVZvxs_BNqT3Wq_eZS3EvSvcUFfoyMFJlr9FbvTKRa1mEpOKLiu74I7b9fe7DCJl_QJ3UWhqZ7SSWE-0bwWCJZQ3loMJ-a-phoYzxcguMSL8tbCgZI6bupw1yL3VpvKunB6IvVye_CXj5FwpHcvzi4TeeAemGbBN72V-v7K1HBumQf4KBzaIJXjmtA2TtfgwQnI30O-7I4P4gqxJwWFrMll_82AB8GQkzAH2kduCSgfTLt4AuLmPDPprE88lUOGrSYLRgxNUOumd6OTpZAX7weN46jblJoyTWnQ_8RTwOMbPinmuEXwlbqWznCtO1eBKCZRg4rs6WT1r_I3CwH0bdDOf1eZ_TltwlteidaTIP0R24eG7ky42SRRGkDVXfR5pT9Nc6ID9boXHX3VGKW4MfSpD9NreyvB0e624gTjMAntBg7DjzrOBXKlVeHN2LWeQWdS7M3b-sRDgIb58J_rkA5mK9_EQ=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 29, 2018',
+    description: 'Radio interview with our partners from Civi-co',
+    image_url: 'https://lh3.googleusercontent.com/RDjIvk-NdvHXLa2veissZuYcB8dAPhvrsVJdn1HSZb2rbLcZhOhds3YEu_XNbbpchUQ3-LTZDN5CsfzTBdMVmBldySI2HGSyKrQaZvwiYefzcNHT8nM3iT81MEL6JFP0jg5sT8S0coODLcaxgTM3NDgXnLsy5u19S6STVqdrzVJCdnAJmHN0EDy4mqbmK5YFgKTsC55oANX17jq01340MuM0P_yPp_0Cq1mzckBRO1H2CG9urZNSHS6MhQZxcfTtsbhDQddJh_pDhuIKeGXPyCb3eybJ1HEzK03zFGkN2MOo4mUK9fv7sre7iwkfKQiAi0xIBtkMsSzz5b4v7YapvHK4VOow6TPV29SYGzHeyS1boYjwJA-IWVro9XvXEU50WOy4-DdyDLY8-Jo7YLwjyZxEZCnbm66XnO6XqccvfPtHYgKP6A1nUZTE9XN7s4NIubzUSk41zQT8wVA2Nv1iwWXi-dg2ajvxJCF_a8ks6qV1iHCJBjnxlGRAGDm8ByaeHpfRJGALomuKQbXe8at9YbKgcOGtmsCpnaWx5rtKS_6jmlOGNz8C6Koi8jiXs0j3wpiwuTjHeaeaeDKID_QmgIKrvUacdnFEa1xHgiXUtuDOP5hEWsH_I9DaETIpUc06KTRmbu2fegdciK0vC35l0yfTwLakRPw7P8lAhIhPh-hmNarWi3ieidE=w478-h358-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'April 20, 2017',
+    description: "Roux's adoption day",
+    image_url: 'https://lh3.googleusercontent.com/NW4gqN0fyzmmx79QRlQJCS6AFk8nLsuD3eYCaBTqMb-C2Cz19xQgCs4TXeQaKR3li94KLphn2u9b5kd9RDDcwxtETzgLOTpdjbTGMJTuY0bEEBLv1cOE7OQH_kCNnIJa-RvNN412OZZgzMbsFMk-cUcbTVnEK1XDgzENDYtMgq0vGHQ9jGhZ7-JgfAil1Bg5TJT1Plyn0xF5DIlHupu2tE_fteWguw-IzGIHrApKw_n9_1Jxb7U1UADDntRqwuMb06eW5D7JiVj20AQWX_AWCvcPlU-XTPu2PjtIIXIlPBaglZPEsX8OVrN1eqRv9jeRx6z6xr5U6AAfxutmuwnvS-ahIhpQ0-1x1tCmAdCYnUsn3YXkqFiIkr9_163TeA71MxlK48EOAxrCEWpb2tWC_RKmgQU3CmRvPiedOjcrIu6TyYtMk67JAgDhm6Zwv8BQfnxsyJ-zyNABoVEY3078MiubtCaaWKuZ0iqBcST5nEwoZvFvFKm9X4iaoWn2YPJfCeLKvqbR1KpRx51fmNZ8gxnROnDSBMIlG8xPbB85Qs35Hm-fPC4lUX5tTiadCe5aO_eNBrUkMmhUxTEYhpv5sZHq8GaoB2xsL8Bl9DozRED58d9I5myLpbPEpguqsexcg9emesnUJ7W-wDvfyzLWhFrcHVj-8VcAmmEXjbVEhJ923ftLzXHBgjs=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 5, 2018',
+    description: "Working with the Humanitas360 at the men's prison",
+    image_url: 'https://lh3.googleusercontent.com/SUQLQFezdrSFBTInJEY4G-78W_mK9vwDjtBZ5uhbzO15A07WX_oiFJxHLlemBQJEdRaaSi7aoieT2-R8hTSKlLLFKCkBwb2KDcat50lt6KNVsWAmcSDY6NzR4X4XPLWX8xanPqw2QKQKyRoMYhhW20o5XB-nfcYJtgJzP7KRUqkPHBuqc8SY3pfR3g08kVoJLKfwWSeE42XuSsI_dlJN5NImY1wIKhPHFxlySqEpZuStsYe1FcdP6RV0PYaE_okT2Y0pbFkZ17aS2MF5X6JzhjDxW7Xg-V2BguULez_lS2qj2td8QrJuDzMj7NMX31ist5RUxCnqO7ZAXk2cJzP9ILOnG-SAutF2AQSQMKsS-VJRVIWG98W-RIWRGFJNUMNaIFrXPS28IwY8wTaNvxX1LrTx7XqYZkFkziaaJXyu6PvrmM3MoUlV_85hig8btzX7LRNNz0b6UYc_XgwyFAXXm1SPTysmUq2dRhCOTYjJgr-oUcDr6TgSIVTx-PnnNhWZz57hfuEobVc2utSJ_QH76qo9v5PWV3CICf-4ABCp8jM1LgjhdzsIfzPGmNngIejtxbCjKa4vopsGKMqMLp3qHmnxTSFn9XloxN5M-U_gZTT6C9uIPY9XdF3SRgDz9UUE8JPzwblSDlFue-TuqyzQ2qwW7WaKz9n9LjwA3aWzI9_CoNSPQqzV5SU=w734-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 5, 2018',
+    description: "Working with the Humanitas360 at the men's prison",
+    image_url: 'https://lh3.googleusercontent.com/WYUuh6D0QniGWQrLjcuzQyi47UZnV6RaRD14fnSvdJEBjGeA0jkfa1xybVxrfOcc65dquTqDZhj_bzuqVtUFVEimjZUgtKs_7ktbRuO3NLQILTBuWjmk4xB35P3qtYPFt9BKC0N0z84Tz9CVPR-0Cbxoem7AfFr9CblZSHhKH8CXG-T_60BggY6iPTvJ_EiuBJQ0beJiQuLZaqqikF6lj7-QArLJ-VtbYIyYRsYS8wkgUaug8th7gtmZObDoEFrDMq2Q3U_1TW4B6McyvCJ9CkLj4zYuLY8latkBLCD9w-yX4lQaZyfzTJqWK0S2XWYmTP2ShP_9LLE4zScMco-EpSakKWiFtOgeXignNCm3OP23ZqEgm-zFTH13cUCO-fGHZeOUA6aH4KlDM0sRtFD3oSv21A-TunBeCZE6OzVO4iAI8g6O5ycYBk9642R8V8wyW4hQrKl3Nbb7avVtRqo9ruA_ZzWan2AgkDgKc14075T0n7MQDhG63iLm-pXTEoKUL-dedIPT_0B6gWrBNf2IGK5lJi8xEQuvB9mHWQsZqfaI4vZPBY2jxg2xvFUEX_Iy_Jsqy4oQO-Dsh6GeoGXJf1NKGlt0XacQBPlg6qrWcr27VJk_UtFlwMEM4_osxNJKTbkABJ_eQCvk_MfYMeEL9vkXNy05Cgk7UsxYmGrfXi2MmfcU6V_XHMA=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Echo Mountain, Colorado',
+    date: 'May 20, 2019',
+    description: 'Hiking through Echo Mountain',
+    image_url: 'https://lh3.googleusercontent.com/LvgZKFPylib0awWBLQ69J9Vg-bXa6sub7S633vPHXC2mCl7H5xBVzVuw_wAzxvkW-TyATq9EvRZs5xECvaxHZA4pBGJ3fyaHoSbvGtXYGO3M6JL-p8W5TeYsSQp-rtzI4GicnEAheFaIl5q50Qe1J8fKRBQf25CHYP0ls5EyUSpPc6WQcVCRq-8hmNdJC4fHZwKa4SAgRpzDSAcVlLgrCSeUo0w2QgXxrgTD-JxHCMS1YNCNaLLI2Y6nJfLw-Nq-PaN5_VBM6nX_MV_6tDQN4fZdE1TkJXnBiuRHDlo8zRQmzpuF4oJzBk-BnvTgYlYslFhvzQkh-zB1Dlp9TG-3JyXR32UocPKhG9q73pSQA2P6_4cWPOxrImtBGzENgcFZTVVUsUteY17ICOAZpbWG1vAmAVK6RD07oUtAs1XQ_73IYm_01RgHsuD5jx5ib8ebdxPOLH8JZ2m3TiPHRj6A3aiKuv9SUaE_AsVmyIm3S-ZLgba0xkHbsyDFhpmqFb2d823Ma7rSeGZnSI0m1X8F2_weQcc5njt-8iQYsgKBhiqWc-ahl7adKhROU_X-ppbqP-gfChM46qWUr1VF41kHME5yBM27xv36gxAabdHzZjzhQIcKN184as9d3x0o7V_JgXFSNDf_WSlk_0Q2sQhWXDA6dEY41fEo2oXb67QZpWxfhDsG57Zckws=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Vail, Colorado',
+    date: 'May 16, 2019',
+    description: 'Taking a break from the slopes',
+    image_url: 'https://lh3.googleusercontent.com/FIpJSVf3D9tcDqA-HY2UCFDTtAi8eafAXR-an1JGEkniDxNa4hiFUeGhbm20MBKqa4O-Rz9FlWyG8wZ9nZjLhTulSWikRnWsqvH5lzWSDYty3JVbjn_9m3J6GBpA4G4DlXlza3HkvpmoPRjEIVHSVnQ-Has7_mwIeSIHpjMRhd1VsJlkZWntMs1lvxeZLr6uBwSLNRpq1DSU-9ECbFdl5gC5YIvsKu59ld77x0h7clY9Ss75ZN9wB8x84ZdPIK_lkCJDCvlKXmNiTyAri9QMOXA1Tel1_pTe72PJA9lPgxW1yUYcIwupcwHPd9x9uRXMesqRHwf_WL01K2EgFnwUNm4-70n30IBo5mM5B5XovbqBHfBXrxjqWtxGZersEJe-zchtqcHewR18ZpZBT4nuXfdhQ02z7zNHifCXnDfLhhvAk2277wIkWrULTnnIy_U6-aPv4OpRd0X9Uat2jPH3hljNa0lPgoiUThNC_r-Tfur2j_GRUMywNrGOABQN_E0EoYotiAAZUYgYNNGGKGLSr3LHz_GJeUt_wX9mhkhqLzMyh33oUph6bduP29hmziqZl3CekSrjgzPJkaGpD_i3hOWz4tx2tKmo1GGlpsW0qIwP4eYd7uIDeRTXw7_LB-M5WBVO5VaQCcR33XyrOBl4kboTmk0Mqa-wd2OGHKXFrM7dyFDW6a-MzBM=w1182-h665-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Dec 4, 2018',
+    description: 'Copa de Brazil',
+    image_url: 'https://lh3.googleusercontent.com/gwa7fZM2pi6L7LVKwUVHRE3gDSVflBSq6YrQIADdiqKsHDB4wBp7jL7JkXAJTzXndc5ku2qcFeeUFI_xYVS2uJuG8iHuVT5UotPiWuMfN-aZhe5MYypo-M4am7oxo-pMjw9IErZQ1C9xGZWR8zMdHlenU0Z9YXsqO02DytGorzLPjaw42nifkT1qFGL8UqxZy6OetHEjItEI1flkYyse5UW-hTkxJht0pfm-a_RENjswQwubEhDRYh0ZAVQgkCzRAyw1zQxKHpVHd58cqKg8hr5yLo21-wH2OJBXUF0ewtX8lO3YEWc2KGdSJAyENjD_cPtcqOokuduAErsQLW5UWk7l0jJfsn-zN3yqI5o_KLfgyXqsXxXGGdnKhx31dsMgPQfmjQyjo-d0aeRewDA2WRUjmHh4uiB7rKUTfFyBPNhP5EEjHmb8QejHtnCgeFxIf2wfobEAVaxZZMPTF2hzz6hKH1BYR1z1D2ixroTcALT0kIHPb9JdOou4i4Jj2Nk5raNBOZIhxBobnl4dGVWsjlOAyAoe31AllHXQ016uQE1mBqQk5YwjHF5oo4Hrt_FQTDYtTPHqhBZbgGD22xb83NstqRdAwKCwWMXYBXLjr2H_oo4cR00I7RHUzJ321eXFk6mQBsCutGtfVQpyEpMueRkBqNehzBJqyQeeD8O8O6B3k46w3v9NJF4=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Rio de Janeiro, Brazil',
+    date: 'Dec 8, 2018',
+    description: 'Delicious tuna steaks',
+    image_url: 'https://lh3.googleusercontent.com/ZzBj8l7su91_lD0OMRNdzvw7R9TBgJ81q5o3LXdemVx3j4SfV4Hug7zaRw8QFuePJJcjrG8IAajURIxaLpl_OpNg7M0qcSjVdpSG10ATS1EcH_nuiW9C1fETnPBFZ_QlRToGGQlq2HTvm3DlrOEGvuj3bLo2UBks8FVAgc0SQ572N7wUd_mV2_KelyK9cZ5APdkaJH9o6piDtI-TyI8hSAXrP5N5CVJU2qzNRN6WstIaAbu8-6qrglcp89PnC4v7niQvBp2SHv2HBllR_iBp_OSD3DtrEhzIbT6D8ci9ADq_vJPIk4GUmQ_QANJ6EU3har-N-9Cx5_TOR_E85ggg0E8wB8j_FSTTQXa_K66xr_Ae9udODA-ZfeHaQ7D0X3og801p3bK7sp3obDDMm4QnQzUubNywQ09z696Iy1I_jqfkikH_GR5xieCDvK5V2rUTTZwaRQGMwySJVLoMMQf2IAAxYZtqbpvPIjmCU3PamWPRhGvxl2dVs2Nv1mYhgc1S49X0KqLptR9IAW6_7tyh1HoaGBXrr5vTH8k8MTMM3HA4Hmh_CslODzclVxfUYn3vz7nVKvlJzfvEl6-bSVQnEEtc5y-C4_Z3LUUJSErt-VQhqSoSIIXlkyHAkFfuz_-L75mcnUMAQGSM1pLf2n3G4iGry1CGs6IdEPyCDS2rdeGXdw435F3_7B8=w734-h978-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'Sep 13, 2019',
+    description: "David's art exhibition",
+    image_url: 'https://lh3.googleusercontent.com/-5f23i0-8umaJNEGOU9Xn7NOFQYc2hC4wvNeEiFe6i4VMXDOTux3HJznXeWVh_GDT4zCpeZATuvNE95hmRXXOHyxf-EZs-DsoSi7wKDHjpqUTidpJi20VgyoExD-iwJm96ORlEo8_xAoxkpylUQmEiDOMlxKb0sSEZPsf-atN8C8gKODJ6DJCDsw9aUbJh3FJstRW-5EIMmcpIOCF_e-psmh1EjKATZycKWER2Dmm2rQnHXL0rwiz4I0r6MsstMj2WKGhxf1_XS0qja6sNvdS7vNOY6y_rioQNl-V6ZuzZk0Z4dobjoUWwkL_fYkcocwtZV5pVeohFw9tyOTCHGxF6UAj8vPk8Zi9yyxMoeG-hHUlA1Qqfj1gAn3D4P63iaY4iD7xHEe0xZOjjJ_54a7kUh4LSeLMu51drX98eTsWVUvuS_ji9Y34o79ILdc1CZ7DapZOz7PywViq00afMA-mVVf5OsGsXkDs2w5zNx8ohZoLRcA0_ZBFkFEm-dNhWOrb-pFGnCSpzspWNo-fvPdAQsqZLFtPVbBknFoZUKLCvyZrzrkrfDHK0QQV-wofYOzJt8r0k1qhnRyWtcHcR_gnpXk31hmwWKuRWI4FKar63fXtKmjL88wPnL6yMmz00iltxnMs_GBC2D8aeRKMV1ZHe8nHECDo-Y7rh8wHiL6gwdjVjWvnVzVz3U=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 24, 2018',
+    description: 'Lunch with our corporate partners in Brazil',
+    image_url: 'https://lh3.googleusercontent.com/SXPFD22nDEGfeSuL-sbnZmxTahJb0U_AJjLBb4mNeNB2XlBQJ7QlabGYM3zkDIfbFVaERaa0RT03Hat85hOJDqYXf6eunW95-bs1dCHvHN7jYxJ6EWak0pcD_MLadXd2mpDE4RpmH2ZDVNAdNZ2-oT5_O7jBSAUqVbS8Pqlp-605uwLhdPzSbj687cw5eQvwWXC3-RlE6KURR1ZHIa9WrqgqvxyfHY7tHMbDjrmejtL4AXMKl5UGB5N8UVO-giCnsjBm9UY_F5J3cLGgrBqrSicBMMBnj-lwOzhw2QLM06nMqB_X9sDaPXH_BZytOGTOwb2qcsQnQg66yeNtTj8KGtuXIBgrWGsy5Z823L7RDK2UTSG30XAKGHo0YQOyZ3WBPAn3397ZujrdaqNPdz_m4txaNPnS76Fb7_YqJo3s4OpE3Vs_TbrTZDf8_rqEyQeyx-bM6LWupJW0oORsJ5mEbwcq1rSYHOuzcLZGqBAkcymE5sy6MYGNt5IE-WEBUF-ytks5fMb_HtwlwroVivO7GvAE6JMuKgFyXKQz9QpKs94vtw-SOXmLtMAhyxgJTbnpZP2bNemxhUZXtDlXg6icYYBMwK9stkOPiB64yg_g5rMUiKJ9oo7qUhZ5sSWdU0kwgTO6AmqIDrckaguKcI-mStrg7_TFiWvjfrY-PGeTP4IUpbpISvecGn0=w1024-h768-no'
+)
+
+Picture.create(
+    location: 'Denver, CO',
+    date: 'Sep 4, 2019',
+    description: "A meme I revisit to remind myself of where I've come",
+    image_url: 'https://lh3.googleusercontent.com/00i1EJYcI4IYQqUH0wABiVpIm7oa2p0vlC-0Uw3MXDYB2J95SB6N5X96r9nwPIG4dYgRWNEwQCSeKxZH-QtzWRE4TFRRaSqikR1go8umLdIhweEMI479DSqUBBkoUHht9XMpmLM1gSiIHxij5Hz0QOHprX7X6PAcxeZvXF2KdM5JgrCOYuh1GX_Nj86XZs4-nfGdfcIu4Pquh1BMtnTSuMfwYDiNUDYcG-ocu8YyGP2GWxfHkJERgmnc0xTH4SN8jGk5sihjdgh9TABlkKH4fJ0cTKUCzgXKeqRQPLKDTPmPzgbR3gr5U-IdN6RW7HDcTEoshqsRZwHiaJAt877F9w0RHyjjNgU1chS7gDptUwZU6t1Z20c4Wsh1J4q0DTHRrHso6M7e_VnUylp0N21vI9A4k6tciUWkGyfI5dNcGo9pAk6iBNZl48SS6XOLSf72qfCeh1KkQbFB4Y8DT8XzmrTW2ySWMWrEFiP-5MSwynpCB8mwejdbpgoC1Tq8agCru0axRyfc-DnrE_7phSmF-bwslm_pchKeh1R8eM4YGudYZqHx-hLAhX3f0A_Uoyu-FC7t5cAIwyf98VUB1FZMueckJS86g_wASYFZoWI1I-8YYe9EhqwExPikzm0q14R6TXtwuRqZnh0k8txY9Sbf6uKxzk4b5hUfH6hnXjR9fe0A5AWDpqtd46Y=w798-h978-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 30, 2018',
+    description: 'Working with the talented women at Terreza',
+    image_url: 'https://lh3.googleusercontent.com/5OF-r9j_YxcIm46eZcKeATmBHJPyMJ7DwOt26MAMHgP4o2QZAklmNGOZ7S9RYkNWuxocXTdSFxAQVbRZ1PFegQDX1135zI9zLoJaCJowx5v9f8AbeUyr8J7UUdxQ_v90F44Q1bBqPv4be7bIlJdeZhVdYFKfTKy3rUzpHL1Ut554F6pZc9dF5mfcRKV0XbuhrywRnZo55Fp-P3qiZb9rWg4H4y08vmeE6XL1kVpfpO7OiupNzlGx2Y_Sx-pBmTWjhtd-7qMBjrv67Lmc7KtA175s3Rl5ucGxNmpBZMsYiTN4Iy62Cp7FzI6KR6M_SbLSQTLffEi7_RpMVPd5Du07r8cgvF8BOLACRx1HQuBIgZSi2gMwjuBIiGXRGXNPkxPvMAN-XFposIBduYQ8gGEXyj1860M-ZdbQiFOYcAdx_tf3S7dhhCAPA1dhdsXlIDnq4CG53NP2KnJO4DnrEOWfyUEuX9_4s73C_a77AgsVyebsPBIb-IkGcXz0h2i9fzlV0OZjdF11AiBDCXpRcfS6S-bH8NCBVELcXkpmiq36DLmUXuJW8vvZOTwkohFkIx_G2Fdtye2O_mK58QkDjvlKSjz1TXpWacrdn8WyPwhc-KxiTqTI1YieEUCiwEm9_nDAjk4eChn_QlLjQINa55wxRqaoBEpTfLPFjKZX728qn_cVSIg8s_ohWfQ=w535-h302-no'
+)
+
+Picture.create(
+    location: 'São Paulo, Brazil',
+    date: 'Nov 30, 2018',
+    description: 'Working with the talented women at Terreza',
+    image_url: 'https://lh3.googleusercontent.com/0at_GZzwO9NQ538gAjyI7qS8kkNUVX0X1MPEaUtDtoqf79h-bwQKrge84AFof5hOSCSUuXDjJXt88LQgEgc-7NfMcp4wg37PTMskKzpTzjjyYWniB5UNN3ubvBiT5pmywYy_AP3gMyAQlzsfg6PHfBbJXOXfdj1F-sbKOg_OUTuowZ2_onkoOXntjhZ-MIsMiKp1rG5ZKotL7MgQOxGTT0aq1pi0dBGFdXKusTBk3-3loLZCnUWciMP47E9Zs9SYohSgIZq8LM3xjj9s6xEXKJZ7ZYFKpvLtcJ2JzMb57fi5fQDOde5ug_J5V38og_6ZXefuFdkqmmIJrCvT9H38dpPyfWGA6ECaouiSRwK5-346EQb86Qa1fYSP7No6XZcgzqk8FvBq6ORZ7P3iKrgW69TWHyRNik_scjuWBpsWcqEShuIYKvQ4zt56piFcRXawigher7FgPhGIYBBJCktaIGJ6rhg91u1J4U9k4QBMHL-Uj5tII_IlzpcdIP8M3K4W62mV6nNQp3VE3tRKuWj6EsBbPCFpWVIhEkpQ2VhHBchIw-qP20UnuOAXchzI1U8U5nWscHGh_skRvdngQ80LW6eXHSY_dmFlrHdfImWdp7Ys1iBP4nxqQP8T2alv7DlyDS0haaJ88IbucQb5FGXw-0i7qOzIjgQ0c-FNXfaNgQVJJizdP16_N30=w494-h302-no'
+)
