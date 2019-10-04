@@ -43,7 +43,7 @@ Project.create(
     language_2: 'React',
     image_url: 'https://lh3.googleusercontent.com/Csmo9Z-o0CLiy21P-CtMuHjkGTz9Dx_wP1QSLndCALKUBomIIFcanFtwr0RiOoqn8NF0soKJDLKtKZfWBKrTFbbI9o4FVjwdZUC2po9ZqZZkZ4lNq3eYfT_0v7WFU0u7wMYTOFpn1W33AxLRvQE6j4OZwHaTz6I_6bzh5ZFakRo8M4vLWs2TY1nxgZ3_387R1n4UVvzwg0P1jcIW8wFhS4WjX4GPuT3N4O3AAxsTA4FOzklFuJov-X8TgrhTpneZ01Hat44VsqEHFgy2s2y2W2gAOFuLv6X8u5OaG3PBaXupTSSoG5lmqL6a87w83QNwCLvqayRHHVY3wNUNEAa1zzFoygAuDmIz8a_LLC2vY6WbUWFZ7glIEWQ5cONs_MX-tDBAeZiWfvMfBY8uwXCoLHAHhABDsLjKIPPaD3aP0fGwNhpU-9s--9eNP8-_7Mc89hTamOuqZ3jF8EEWXyeibBFD0FzbHank4ArBBvjlPknf_ZSdZrobhSuGbsbn7V5g5q-v4qG_NNZG8W7OHBvCbfaXMwmvztGjMJvTTbqZt91Q8HYT63fo7nm2g4ICcn1RT5_iyuvH2oRs8s0xaSlY83sYOKMt71Th0Cp1TzODYuOjIg6v7_eMNmDPJ9vSxNSlOpuikRSRR0SSubdWJUht9HLscr13RqstkEA4Q7s5L3w3fX4UhxWjp2s=w1915-h975-no',
     description: "Are you continually baffled and amused by the ridiculous things that come out of Kanye's mouth? Do you want to hear more? Kanye Said What is a simple react app to discover the crazy world of Kanye's quotes.",
-    link: 'https://github.com/ChefBoyRT/KanyeSaidWhat'
+    link: 'https://kanye.netlify.com/'
 )
 
 Project.create(
